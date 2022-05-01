@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="index.js" type="text/javascript"></script> 
+    </head>
+<body>
+    <h1>Calculator</h1>
+    <form name="allCalc">
+        <div class="input">
+            <label>Let's roll!</label><br>
+            <input type="text" name="inputField" placeholder="0"> 
+            <button type="button" id="reset" onClick="clearInput()">C</button>
+        </div>
+        <div class="options">
+            <button type="button" value="1" class="button" onClick="calcNumbers(value)">1</button>
+            <button type="button" value="2" class="button" onClick="calcNumbers(value)">2</button>
+            <button type="button" value="3" class="button" onClick="calcNumbers(value)">3</button>
+            <button type="button" value="4" class="button" onClick="calcNumbers(value)">4</button>
+            <button type="button" value="5" class="button" onClick="calcNumbers(value)">5</button>
+            <button type="button" value="6" class="button" onClick="calcNumbers(value)">6</button>
+            <button type="button" value="7" class="button" onClick="calcNumbers(value)">7</button>
+            <button type="button" value="8" class="button" onClick="calcNumbers(value)">8</button>
+            <button type="button" value="9" class="button" onClick="calcNumbers(value)">9</button>
+            <button type="button" value="0" class="button" onClick="calcNumbers(value)">0</button>
+            <button type="button" value="." class="button" onClick="calcNumbers(value)">.</button>
+            <button type="button" value="+" class="button" onClick="calcNumbers(value)">+</button>
+            <button type="button" value="-" class="button" onClick="calcNumbers(value)">-</button>
+            <button type="button" value="*" class="button" onClick="calcNumbers(value)">*</button>
+            <button type="button" value="/" class="button" onClick="calcNumbers(value)">/</button>
+            <button type="button" id="solve" onClick="inputField.value=eval(inputField.value)">=</button>
+        </div>
+    </form>
+</body>
+</html>
